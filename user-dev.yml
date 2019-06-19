@@ -2,22 +2,22 @@ server:
   port: 9008
 spring: 
   application:  
-    name: tensquare-user #指定服务名
+    name: springcloud-user #指定服务名
   datasource:  
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://39.108.53.77:3306/tensquare_user?characterEncoding=UTF8
+    url: jdbc:mysql://127.0.0.1/tensquare_user?characterEncoding=UTF8
     username: root
     password: 123456
   jpa: 
     database: MySQL
     show-sql: true
   redis:
-    host: 39.108.53.77
+    host: 127.0.0.1
   rabbitmq:
-    host: 39.108.53.77
+    host: 127.0.0.1
 jwt:
   config:
-     key: itcast
+     key: carlinx
 eureka:
   client:
     service-url:
